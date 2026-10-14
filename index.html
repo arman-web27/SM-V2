@@ -1152,7 +1152,7 @@ input::placeholder { color: var(--text-color); opacity: 1; }
   .section-head h2, .section-head p { overflow-wrap: anywhere; }
   #problem-section .concerns-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 20px; padding-inline: 9px; }
   #problem-section .concern-card { padding-inline: 6px; border-radius: 14px; }
-  #problem-section .concern-card .concern-copy h3 { font-size: 14px !important; }
+  #problem-section .concern-card .concern-copy h3 { font-size: 18px !important; line-height: 1.4 !important; }
   #product .product-showcase { width: 100%; }
   #product .product-image-wrap, #product .product-image-wrap img { max-width: 100%; }
   #product .benefit-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
@@ -1185,7 +1185,7 @@ input::placeholder { color: var(--text-color); opacity: 1; }
   #before-after .before-after { grid-template-columns: 1fr; }
   #ingredients .herbs { gap: 8px; }
   #problem-section .concerns-grid { gap: 0 13px; }
-  #problem-section .concern-card .concern-copy h3 { font-size: 15px !important; }
+  #problem-section .concern-card .concern-copy h3 { font-size: 18px !important; line-height: 1.4 !important; }
 }
 @media (max-width: 600px) {
   .page > section:not(#disclaimer):not(.disclaimer) {
@@ -1202,9 +1202,9 @@ input::placeholder { color: var(--text-color); opacity: 1; }
   }
   .page > section:not(#disclaimer):not(.disclaimer) p { line-height: 1.75 !important; }
   #problem-section .concerns-grid { grid-auto-rows: minmax(90px, auto); }
-  #problem-section .concern-card .concern-copy h3 { font-size: 15px !important; line-height: 1.5 !important; }
+  #problem-section .concern-card .concern-copy h3 { font-size: 18px !important; line-height: 1.4 !important; }
   #problem-section .concern-copy { min-width: 0; }
-  #how-it-works .how-flow { --circle-size: clamp(88px, 25vw, 112px); gap: 20px; }
+  #how-it-works .how-flow { --circle-size: clamp(112px, 32vw, 148px); gap: 24px; }
   #how-it-works .how-copy { padding: 14px 10px; }
   #how-it-works .how-step:nth-child(even) { gap: 12px; }
   #before-after .card { min-height: 0; padding: 18px; }
@@ -1213,6 +1213,26 @@ input::placeholder { color: var(--text-color); opacity: 1; }
   #orderForm .submit, #offer .ticket-button { font-size: 16px !important; min-height: 50px; }
   #experiences .story-person h3 { font-size: 18px !important; }
   #ingredients .herb-content { padding: 10px 4px; }
+}
+/* Keep phone card typography as readable as the desktop layout. */
+@media (max-width: 600px) {
+  #product .benefit-list li,
+  #how-it-works .how-copy p,
+  #ingredients .herb-content p,
+  #routine .routine-item p,
+  #before-after ul,
+  #experiences .story p { font-size: 16px !important; line-height: 1.7 !important; }
+  #how-it-works .how-copy h3,
+  #ingredients .herb-content h3,
+  #routine .routine-heading h3,
+  #quality .trust-card h3,
+  #experiences .story-person h3 { font-size: 18px !important; line-height: 1.4 !important; }
+  #faq { padding: 30px 14px 34px; }
+  #faq .section-head { margin-bottom: 20px; }
+  #faq .faq-list { gap: 10px; }
+  #faq .faq button { min-height: 64px; padding: 16px 14px; gap: 10px; font-size: 18px !important; line-height: 1.45 !important; }
+  #faq .faq button span { width: 28px; height: 28px; flex-basis: 28px; }
+  #faq .answer { margin-inline: 14px; padding: 14px 0 18px; font-size: 16px !important; line-height: 1.75 !important; }
 }
 </style>
   </head>
@@ -1892,8 +1912,7 @@ input::placeholder { color: var(--text-color); opacity: 1; }
               >
             </button>
             <div class="answer" id="answer-3">
-              परिणाम व्यक्ति की आयु, शरीर, खानपान, गतिविधि और नियमितता पर निर्भर
-              करते हैं। किसी निश्चित समय या परिणाम की गारंटी नहीं दी जा सकती।
+             नियमित इस्तेमाल से 20 से 25 दिनों में आपको बदलाव दिखने लगेगा।
             </div>
           </div>
           <div class="faq">
@@ -1902,14 +1921,12 @@ input::placeholder { color: var(--text-color); opacity: 1; }
               aria-expanded="false"
               aria-controls="answer-4"
             >
-              क्या SLIMAX अकेले वजन कम कर सकता है?<span aria-hidden="true"
+              क्या हर कोई इसका सेवन कर सकता है?<span aria-hidden="true"
                 >+</span
               >
             </button>
             <div class="answer" id="answer-4">
-              स्वस्थ वजन प्रबंधन के लिए केवल किसी एक उत्पाद पर निर्भर नहीं रहना
-              चाहिए। संतुलित भोजन, नियमित गतिविधि, पर्याप्त नींद और अनुशासित
-              दिनचर्या भी ज़रूरी है।
+             हाँ, हर कोई इसका सेवन कर सकता है।
             </div>
           </div>
           <div class="faq">
